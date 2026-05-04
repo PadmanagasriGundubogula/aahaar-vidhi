@@ -5,7 +5,7 @@ import { MapPin, Trees, Sparkles, Car } from "lucide-react";
 
 const Venue = () => (
   <Layout>
-    <section className="bg-gradient-to-b from-secondary/50 to-background py-16">
+    <section className="bg-gradient-to-b from-secondary/50 to-background pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4 text-center">
         <p className="flex items-center justify-center gap-2 font-medium text-accent">
           <MapPin className="h-4 w-4" /> Workshop Venue

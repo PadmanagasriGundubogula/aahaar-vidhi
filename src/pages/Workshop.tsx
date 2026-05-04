@@ -15,7 +15,7 @@ const audience = [
 
 const Workshop = () => (
   <Layout>
-    <section className="bg-gradient-to-b from-secondary/50 to-background py-16">
+    <section className="bg-gradient-to-b from-secondary/50 to-background pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4 text-center">
         <p className="font-medium text-accent">Foundation Level (Level 1)</p>
         <h1 className="mt-2 font-serif text-4xl font-bold text-primary md:text-5xl">The Workshop</h1>

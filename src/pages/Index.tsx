@@ -25,7 +25,7 @@ const themes = [
 const Index = () => (
   <Layout>
     {/* Hero */}
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden pt-24 pb-24 md:pt-32 md:pb-36">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero})` }}

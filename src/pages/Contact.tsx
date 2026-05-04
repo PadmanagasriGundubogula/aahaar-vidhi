@@ -46,7 +46,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="bg-gradient-to-b from-secondary/50 to-background py-16">
+      <section className="bg-gradient-to-b from-secondary/50 to-background pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-serif text-4xl font-bold text-primary md:text-5xl">Get in Touch</h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
