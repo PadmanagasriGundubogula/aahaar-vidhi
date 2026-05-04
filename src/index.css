@@ -129,4 +129,8 @@ All colors MUST be HSL.
   section {
     @apply py-20 md:py-32 px-6 md:px-12;
   }
+
+  section:first-of-type {
+    @apply pt-0;
+  }
 }
