@@ -1,7 +1,6 @@
 import Layout from "@/components/site/Layout";
 import RegisterButton from "@/components/site/RegisterButton";
 import { Card } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, Clock, Users, Award, CheckCircle2 } from "lucide-react";
 
 const audience = [
@@ -12,13 +11,7 @@ const audience = [
   "Serious Home Chefs",
 ];
 
-const days = [
-  { day: "Day 1", title: "Introduction to Ayurvedic Food Thinking", desc: "Understanding food beyond taste — the foundation of Ayurvedic cuisine." },
-  { day: "Day 2", title: "Understanding the Individual (Prakriti)", desc: "Why different people respond differently to the same food." },
-  { day: "Day 3", title: "Taste & Food Basics (Rasa)", desc: "How the six tastes influence body, mind and digestion." },
-  { day: "Day 4", title: "Cooking Awareness & Food Behavior", desc: "What truly happens when food is cooked, combined and consumed." },
-  { day: "Day 5", title: "Time, Seasonal Influence & Eating Awareness", desc: "Structuring food and meals according to time and season." },
-];
+
 
 const Workshop = () => (
   <Layout>
@@ -81,38 +74,7 @@ const Workshop = () => (
       </div>
     </section>
 
-    <section className="container mx-auto px-4 py-16">
-      <h2 className="text-center font-serif text-3xl font-bold text-primary">Day-Wise Curriculum</h2>
-      <div className="mx-auto mt-10 max-w-4xl">
-        <Tabs defaultValue={days[0].day} className="w-full">
-          <TabsList className="grid w-full grid-cols-5 bg-secondary/50">
-            {days.map((t) => (
-              <TabsTrigger key={t.day} value={t.day} className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                {t.day}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-          {days.map((t, i) => (
-            <TabsContent key={t.day} value={t.day}>
-              <Card className="mt-4 p-8 border-border bg-card">
-                <div className="flex flex-col gap-4 md:flex-row md:items-center">
-                  <div className={`shrink-0 rounded-lg px-6 py-4 text-center font-serif text-xl font-bold text-primary-foreground ${i < 3 ? "bg-primary" : "bg-accent"}`}>
-                    {t.day}
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-2xl font-bold text-primary">{t.title}</h3>
-                    <p className="mt-2 text-base text-muted-foreground">{t.desc}</p>
-                  </div>
-                </div>
-              </Card>
-            </TabsContent>
-          ))}
-        </Tabs>
-      </div>
-      <div className="mt-12 text-center">
-        <RegisterButton />
-      </div>
-    </section>
+
   </Layout>
 );
 

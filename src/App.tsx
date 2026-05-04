@@ -10,6 +10,7 @@ import Members from "./pages/Members.tsx";
 import Venue from "./pages/Venue.tsx";
 import Register from "./pages/Register.tsx";
 import Contact from "./pages/Contact.tsx";
+import Curriculum from "./pages/Curriculum.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/workshop" element={<Workshop />} />
+          <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/members" element={<Members />} />
           <Route path="/venue" element={<Venue />} />
           <Route path="/register" element={<Register />} />
