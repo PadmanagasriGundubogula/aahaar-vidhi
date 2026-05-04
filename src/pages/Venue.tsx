@@ -20,8 +20,8 @@ const Venue = () => (
 
     <section className="container mx-auto px-4 py-8">
       <div className="grid gap-4 md:grid-cols-2">
-        <img src="/venue_exterior.png" alt="Venue Exterior" className="w-full h-80 object-cover rounded-xl shadow-md" />
-        <img src="/venue_interior.png" alt="Venue Interior" className="w-full h-80 object-cover rounded-xl shadow-md" />
+        <img src={`${import.meta.env.BASE_URL}venue_exterior.png`} alt="Venue Exterior" className="w-full h-80 object-cover rounded-xl shadow-md" />
+        <img src={`${import.meta.env.BASE_URL}venue_interior.png`} alt="Venue Interior" className="w-full h-80 object-cover rounded-xl shadow-md" />
       </div>
     </section>
 

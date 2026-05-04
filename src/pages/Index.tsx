@@ -80,12 +80,12 @@ const Index = () => (
           <CarouselContent>
             <CarouselItem>
               <div className="p-1">
-                <img src="/venue_exterior.png" alt="Venue Exterior" className="rounded-2xl object-cover h-[400px] w-full shadow-[var(--shadow-soft)]" />
+                <img src={`${import.meta.env.BASE_URL}venue_exterior.png`} alt="Venue Exterior" className="rounded-2xl object-cover h-[400px] w-full shadow-[var(--shadow-soft)]" />
               </div>
             </CarouselItem>
             <CarouselItem>
               <div className="p-1">
-                <img src="/venue_interior.png" alt="Venue Interior" className="rounded-2xl object-cover h-[400px] w-full shadow-[var(--shadow-soft)]" />
+                <img src={`${import.meta.env.BASE_URL}venue_interior.png`} alt="Venue Interior" className="rounded-2xl object-cover h-[400px] w-full shadow-[var(--shadow-soft)]" />
               </div>
             </CarouselItem>
             <CarouselItem>
@@ -150,6 +150,26 @@ const Index = () => (
             </div>
           ))}
         </div>
+      </div>
+    </section>
+
+    {/* Testimonials */}
+    <section className="container mx-auto px-4 py-20">
+      <h2 className="text-center font-serif text-3xl font-bold text-primary md:text-4xl mb-12">What Our Participants Say</h2>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {[
+          { name: "Anita Rao", role: "Home Chef", quote: "The workshop completely changed my perspective on spices. I now understand the 'why' behind every ingredient." },
+          { name: "Chef Vikram", role: "Culinary Educator", quote: "Aahaar Vidhi bridges the gap between traditional wisdom and modern culinary practices beautifully." },
+          { name: "Meera Nair", role: "Wellness Enthusiast", quote: "A truly immersive experience. The venue was serene and the learning was life-changing." },
+        ].map((t) => (
+          <Card key={t.name} className="p-8 bg-card border-border/50 shadow-sm italic text-muted-foreground">
+            <p>"{t.quote}"</p>
+            <div className="mt-6 not-italic font-semibold text-primary">
+              <p>{t.name}</p>
+              <p className="text-xs text-accent">{t.role}</p>
+            </div>
+          </Card>
+        ))}
       </div>
     </section>
 
