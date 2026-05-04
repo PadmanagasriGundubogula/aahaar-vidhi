@@ -117,4 +117,8 @@ All colors MUST be HSL.
   h1, h2, h3, h4, .font-serif {
     font-family: 'Cormorant Garamond', Georgia, serif;
   }
+
+  section {
+    @apply py-20 md:py-32 px-6 md:px-12;
+  }
 }
