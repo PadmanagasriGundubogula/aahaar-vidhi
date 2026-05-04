@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={`${import.meta.env.BASE_URL}aahaar.png`} alt="Aahaar Vidhi Logo" className="h-10" />
+          <img src={`${import.meta.env.BASE_URL}aahaar.jpeg`} alt="Aahaar Vidhi Logo" className="h-10" />
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">

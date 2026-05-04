@@ -6,13 +6,13 @@ const members = [
     name: "Dr. Sandeep Shah",
     role: "Workshop Lead",
     bio: "Guiding participants with conceptual clarity and decades of practical insight into Ayurvedic food principles.",
-    initials: "SS",
+    image: "sandeep.jpeg",
   },
   {
     name: "Dr. Nidhi Gupta",
     role: "Workshop Lead",
     bio: "Bridges traditional Ayurveda with everyday culinary practice, helping students apply Prakriti-aware cooking with confidence.",
-    initials: "NG",
+    image: "nidhi.jpeg",
   },
 ];
 
@@ -33,8 +33,8 @@ const Members = () => (
       <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
         {members.map((f) => (
           <Card key={f.name} className="p-8 text-center">
-            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary text-3xl font-serif font-bold text-primary-foreground shadow-[var(--shadow-soft)]">
-              {f.initials}
+            <div className="mx-auto overflow-hidden h-32 w-32 rounded-full shadow-[var(--shadow-soft)]">
+              <img src={`${import.meta.env.BASE_URL}${f.image}`} alt={f.name} className="w-full h-full object-cover" />
             </div>
             <h2 className="mt-5 font-serif text-2xl font-semibold text-primary">{f.name}</h2>
             <p className="text-sm font-medium text-accent">{f.role}</p>
