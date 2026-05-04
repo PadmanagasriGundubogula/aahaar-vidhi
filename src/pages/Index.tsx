@@ -32,7 +32,7 @@ const Index = () => (
         aria-hidden
       />
       <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} aria-hidden />
-      <div className="container relative mx-auto px-4 pt-16 pb-24 md:pt-16 md:pb-36 text-primary-foreground">
+      <div className="container relative mx-auto px-4 pt-0 pb-24 md:pt-0 md:pb-36 text-primary-foreground">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full bg-gold/20 px-4 py-1.5 text-sm font-medium text-gold">
             <Sparkles className="h-4 w-4" /> Foundation Level (Level 1)
