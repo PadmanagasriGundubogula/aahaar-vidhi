@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, Globe, Leaf } from "lucide-react";
 
 const Footer = () => (
-  <footer className="mt-20 border-t border-border bg-primary text-primary-foreground">
+  <footer className="fixed bottom-0 z-50 w-full border-t border-border bg-primary text-primary-foreground h-auto">
     <div className="container mx-auto grid gap-8 px-4 py-12 md:grid-cols-3">
       <div>
         <div className="flex items-center gap-2 font-serif text-xl font-bold">
