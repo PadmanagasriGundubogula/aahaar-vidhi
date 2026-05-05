@@ -8,10 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import hero from "@/assets/hero-spices.jpg";
 
 const highlights = [
-  { icon: Calendar, title: "5 Days", desc: "14 – 18 July 2026" },
-  { icon: Clock, title: "Two Sessions / Day", desc: "10AM–1PM & 2PM–4PM" },
-  { icon: Users, title: "20–25 Participants", desc: "Small, focused batch" },
-  { icon: Award, title: "Certified", desc: "Prakriti-Aware Chef (L1)" },
+
 ];
 
 const themes = [
@@ -137,9 +134,8 @@ const Index = () => (
               className="flex flex-col gap-4 rounded-xl border border-border bg-card p-5 shadow-sm md:flex-row md:items-center"
             >
               <div
-                className={`shrink-0 rounded-lg px-4 py-2 text-center font-semibold text-primary-foreground ${
-                  i < 3 ? "bg-primary" : "bg-accent"
-                }`}
+                className={`shrink-0 rounded-lg px-4 py-2 text-center font-semibold text-primary-foreground ${i < 3 ? "bg-primary" : "bg-accent"
+                  }`}
               >
                 {t.day}
               </div>
